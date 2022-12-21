@@ -11,7 +11,7 @@
 <body>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="{% url 'home' %}">ChessClub</a>
+      <a class="navbar-brand" href="{% url 'home' %}">TaskManager</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -21,13 +21,10 @@
             <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Главная</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#">Наши уроки</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Контакты</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link active" href="{% url 'about' %}">О нас</a>
+          </li>
+            <li class="nav-item">
+            <a class="nav-link active" href="{% url 'create' %}">Создать задачу</a>
           </li>
 
         </ul>
